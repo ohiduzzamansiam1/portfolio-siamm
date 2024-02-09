@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/ThemeProvider";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -29,6 +29,7 @@ export default function RootLayout({
           <Toaster />
           <Header />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
