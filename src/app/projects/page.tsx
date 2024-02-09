@@ -1,7 +1,6 @@
 "use client";
 
 import ProjectCard from "@/components/ProjectCard";
-import { prjData } from "@/components/Works";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Project, getProjects } from "@/lib/apollo";
 import { useEffect, useState } from "react";
