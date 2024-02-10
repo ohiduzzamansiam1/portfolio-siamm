@@ -11,7 +11,7 @@ function ProjectCard({ project }: { project: Project }) {
       <CardHeader className="p-0">
         <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_prject_bg_light dark:xl:bg-work_prject_bg_dark bg-no-repeat xl:bg-[110%] overflow-hidden">
           <Image
-            className="absolute bottom-0 shadow-2xl"
+            className="absolute bottom-0 shadow-2xl rounded-t-xl"
             src={project.image.url}
             alt=""
             width={270}
@@ -42,7 +42,7 @@ function ProjectCard({ project }: { project: Project }) {
           {project.category.name}
         </Badge>
         <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg line-clamp-3">
+        <p className="text-muted-foreground text-lg line-clamp-2">
           {project.description}
         </p>
       </div>
