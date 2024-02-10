@@ -16,7 +16,6 @@ function Home() {
         <Works />
         <Reviews />
         <Cta />
-        <Footer />
       </main>
     </>
   );

@@ -25,7 +25,7 @@ const reviewsData = [
   },
   {
     avatar: "/reviews/avatar-3.png",
-    name: "Sophia Brown",
+    name: "Mark Williams",
     job: "Graphic Designer",
     review:
       "Stunning UI/UX design. Their creativity and attention to detail impressed.",

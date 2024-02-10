@@ -8,6 +8,9 @@ dependencies:
   '@apollo/client':
     specifier: ^3.9.4
     version: 3.9.4(@types/react@18.2.55)(graphql@16.8.1)(react-dom@18.2.0)(react@18.2.0)
+  '@bradgarropy/next-google-analytics':
+    specifier: ^1.0.2
+    version: 1.0.2(next@14.1.0)(react@18.2.0)
   '@hookform/resolvers':
     specifier: ^3.3.4
     version: 3.3.4(react-hook-form@7.50.1)
@@ -162,6 +165,17 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
+
+  /@bradgarropy/next-google-analytics@1.0.2(next@14.1.0)(react@18.2.0):
+    resolution: {integrity: sha512-Xhli9NkdJbmvs1QNAcC9At3w/GIlXunVIMQzcAYfVP8tQSX3Q4un0doZfQknNvRz+QO6we+8lDE4/dMOio0vzQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      next: '>=12'
+      react: '>=16'
+    dependencies:
+      next: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
 
   /@emotion/is-prop-valid@0.8.8:
     resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}

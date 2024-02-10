@@ -5,6 +5,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "@/components/Footer";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -29,7 +31,9 @@ export default function RootLayout({
           <Toaster />
           <Header />
           {children}
+          <Footer />
           <Analytics />
+          <GoogleAnalytics measurementId="G-70T23F0FH6" />
         </ThemeProvider>
       </body>
     </html>
