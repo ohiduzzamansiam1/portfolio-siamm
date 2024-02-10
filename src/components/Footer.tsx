@@ -12,7 +12,7 @@ function Footer() {
             containerStyles="flex gap-x-6 xl:mx-0 mb-4"
             iconsStyle="text-primary text-[20px] dark:text-white/70 dark:hover:text-white transition-all"
           />
-          <div className="text-muted-foreground text-center">
+          <div className="text-white/60 text-center">
             Copyright &copy; Ohiduzzaman Siam. All rights reserved as of{" "}
             {new Date().getFullYear()}.
           </div>

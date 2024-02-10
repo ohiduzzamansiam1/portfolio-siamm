@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Button } from "./ui/button";
 
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
 import { useEffect, useState } from "react";
@@ -46,8 +46,11 @@ function Works() {
                 slidesPerView: 2,
               },
             }}
+            autoplay={{
+              disableOnInteraction: false,
+            }}
             spaceBetween={30}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
           >
             {/* show only the first 4 projects */}
