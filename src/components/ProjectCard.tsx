@@ -14,7 +14,7 @@ function ProjectCard({ project }: { project: Project }) {
             className="absolute bottom-0 shadow-2xl"
             src={project.image.url}
             alt=""
-            width={247}
+            width={270}
             height={250}
             priority
           />
