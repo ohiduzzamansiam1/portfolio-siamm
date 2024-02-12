@@ -2,6 +2,7 @@
 
 import { Download, Send } from "lucide-react";
 import Link from "next/link";
+import Hotjar from "@hotjar/browser";
 import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
@@ -13,8 +14,16 @@ import DevImg from "./DevImg";
 import Socials from "./Socials";
 import { Button } from "./ui/button";
 import { toast } from "sonner";
+import { useEffect } from "react";
 
 function Hero() {
+  const siteId = 3862720;
+  const hotjarVersion = 6;
+
+  useEffect(() => {
+    Hotjar.init(siteId, hotjarVersion);
+  }, []);
+
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28">
       <div className="container mx-auto">
