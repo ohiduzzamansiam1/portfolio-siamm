@@ -1,14 +1,13 @@
 "use client";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 const reviewsData = [
   {
@@ -83,7 +82,7 @@ function Reviews() {
           autoplay={{
             disableOnInteraction: false,
           }}
-          className="h-[380px]"
+          className="min-h-[380px]"
         >
           {reviewsData.map((person, idx) => (
             <SwiperSlide key={idx}>

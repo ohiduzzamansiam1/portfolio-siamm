@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import useScrollProgress from "../../hooks/useScrollProgress";
 
@@ -13,18 +13,19 @@ function Template({ children }: { children: React.ReactNode }) {
   const completion = useScrollProgress();
   return (
     <>
-      <motion.div
-        variants={varients}
-        initial="hidden"
-        animate="enter"
-        transition={{
-          type: "liner",
-          delay: 0.1,
-          duration: 0.4,
-        }}
-      >
-        {children}
-      </motion.div>
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 15 }}
+          transition={{
+            delay: 0.2,
+            duration: 0.3,
+          }}
+        >
+          {children}
+        </motion.div>
+      </AnimatePresence>
 
       {/* completion bar */}
       <span

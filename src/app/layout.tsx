@@ -1,12 +1,12 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ThemeProvider from "@/components/ThemeProvider";
+import { Toaster } from "@/components/ui/sonner";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
-import { Analytics } from "@vercel/analytics/react";
-import Footer from "@/components/Footer";
-import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 const font = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],

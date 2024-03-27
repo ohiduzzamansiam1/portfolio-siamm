@@ -1,20 +1,20 @@
 "use client";
 
+import Hotjar from "@hotjar/browser";
 import { Download, Send } from "lucide-react";
 import Link from "next/link";
-import Hotjar from "@hotjar/browser";
+import { useEffect } from "react";
 import {
   RiArrowDownSLine,
   RiBriefcase4Fill,
   RiTeamFill,
   RiTodoFill,
 } from "react-icons/ri";
+import { toast } from "sonner";
 import Badge from "./Badge";
 import DevImg from "./DevImg";
 import Socials from "./Socials";
 import { Button } from "./ui/button";
-import { toast } from "sonner";
-import { useEffect } from "react";
 
 function Hero() {
   const siteId = 3862720;
@@ -98,7 +98,7 @@ function Hero() {
             {/* <div className="w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div> */}
             <DevImg
               containerStyles={`w-[600px] h-[570px] scale-[1.1] relative bg-bottom`}
-              imgSrc={"/hero/siam.png"}
+              imgSrc={"/hero/Untitled design.png"}
             />
           </div>
           {/* icon */}

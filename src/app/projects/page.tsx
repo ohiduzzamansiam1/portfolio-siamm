@@ -43,7 +43,7 @@ function Projects() {
         {/* tabs */}
         <Tabs defaultValue="all projects">
           <TabsList
-            className={`w-full grid xl:grid-cols-${categories.length} xl:max-w-[640px] xl:border dark:border-none mx-auto`}
+            className={`w-full grid xl:grid-cols-4 xl:max-w-[640px] xl:border dark:border-none mx-auto`}
           >
             {categories.map((category, idx) => (
               <TabsTrigger

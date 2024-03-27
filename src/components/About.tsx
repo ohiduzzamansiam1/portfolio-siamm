@@ -99,7 +99,7 @@ function About() {
             <div className="hidden xl:flex flex-1 relative">
               <DevImg
                 containerStyles={`w-[500px] h-[500px] relative bg-bottom scale-[1.3]`}
-                imgSrc={"/about/developer.png"}
+                imgSrc={"/hero/siam.png"}
               />
             </div>
             {/* tabs */}
